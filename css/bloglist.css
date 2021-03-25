@@ -1,0 +1,46 @@
+body {
+    background-color: orange !important;
+}
+
+.title, .text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.author {
+    font-weight: 900;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.content {
+    background-color: #E8E8E8;
+    padding: 20px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.blog {
+    border-radius: 15px;
+    width: 40%;
+    margin: 15px 40px;
+}
+
+#eli {
+    position: relative;
+    margin-right: 15px !important;
+    margin-bottom: -10px;
+}
+
+#elidown {
+    position: absolute;
+    bottom: 0;
+}

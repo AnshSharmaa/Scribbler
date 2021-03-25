@@ -1,10 +1,57 @@
-.headerRight{
+
+.headerRight {
+  padding-top: 5px;
   float: right;
 }
 
-#headerButton{
+#headerButton {
   padding: 5px;
   background-color: #0000FF;
-  color: white; 
+  color: white;
   margin-right: 3px;
+}
+
+.modalHeader {
+  padding: 15px 15px 0px 15px;
+}
+
+.modalHeading {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.half {
+  border-top: 1px solid black;
+  margin-top: 15px;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+modal-body {
+  line-height: 50px;
+  font-size: large;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  font-size: 50px;
+}
+
+input[type="text"], [type="password"] {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.signUpButton {
+  margin-top: 10px;
+  width: 90%;
+  background-color: #71DD76;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  font-size: 17px;
 }

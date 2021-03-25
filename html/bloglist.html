@@ -2,12 +2,27 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+
+    <link rel="stylesheet" href="../css/bloglist.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!-- TODO: Include code for header here -->
+    <div id="header">
+        <a href="./index.html"> <img src=""> </a>
+        <div class="headerRight">
+            <button id="headerButton" data-toggle="modal" data-target="#signIn">Sign In</button>
+            <button id="headerButton" data-toggle="modal" data-target="#signUp">Sign Up</button>
+        </div>
+    </div>
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
@@ -15,19 +30,19 @@
     <div>
 
         <!-- post 1 starts here -->
-        <div>
-            <div>
+        <div class="blog">
+            <div class="author">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
-                <div>
+            <div class="content">
+                <div class="title">
                     <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
                 </div>
-                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                <p class="text">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
                 <span>
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                 </span>
@@ -125,6 +140,9 @@
 
     </div>
     <!-- list of all posts ends here -->
+
+    <script src="../js/bloglist.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 
 </html>

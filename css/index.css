@@ -18,3 +18,16 @@ body {
   background-color: #FFDE48;
   margin-right: 5px;
 }
+
+close{
+  color: black;
+  font-weight: 500;
+}
+
+.titleinput{
+  width: 60% !important;
+}
+
+textarea{
+  width: 100%;
+}

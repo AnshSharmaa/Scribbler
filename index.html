@@ -21,8 +21,8 @@
     </div>
 
     <div id="postButtons">
-        <button id="allPosts" class="postButton">All Posts</button>
-        <button id="createPost" class="postButton">Create Post</button>
+        <button id="allPosts" class="postButton" onclick="location.href = './html/postslist.html';">All Posts</button>
+        <button id="createPost" class="postButton" data-toggle="modal" data-target="#createPostmodal">Create Post</button>
     </div>
 
 
@@ -42,16 +42,16 @@
             <div class="modal-body">
                 <form>
                     <label>Full Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Full Name" required>
+                    <input type="text" name="nameup" id="nameup" placeholder="Enter Full Name" required>
 
                     <label>Username</label>
-                    <input type="text" name="uname" id="uname" placeholder="Enter Username" required>
+                    <input type="text" name="unameup" id="unameup" placeholder="Enter Username" required>
 
                     <label>Password</label>
-                    <input type="password" name="pass" id="pass" placeholder="Enter Password" required>
+                    <input type="password" name="passup" id="passup" placeholder="Enter Password" required>
 
                     <label>Confirm Password</label>
-                    <input type="password" name="cpass" id="cpass" placeholder="Confirm Password" required>
+                    <input type="password" name="cpassup" id="cpassup" placeholder="Confirm Password" required>
 
                     <div class="text-center">
                         <button type="submit" class="signUpButton ">Sign Up</button>
@@ -74,21 +74,46 @@
             <div class="modal-body">
                 <form>
                     <label>Username</label>
-                    <input type="text" name="uname" id="uname" placeholder="Enter Username" required>
+                    <input type="text" name="unamein" id="unamein" placeholder="Enter Username" required>
 
                     <label>Password</label>
-                    <input type="password" name="pass" id="pass" placeholder="Enter Password" required>
+                    <input type="password" name="passin" id="passin" placeholder="Enter Password" required>
 
                     <div class="text-center">
                         <button type="submit" class="signUpButton ">Sign In</button>
                     </div>
                 </form> <br>
-                <p class="signUpText text-center">Not a member? <a data-dismiss="modal" data-toggle="modal" data-target="#signUp">Sign up</a>
+                <p class="signUpText text-center">Not a member? <a data-dismiss="modal" data-toggle="modal"
+                        data-target="#signUp">Sign up</a>
             </div>
         </div>
     </div>
 
 </div>
+
+<div class="modal fade" id="createPostmodal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modalHeader">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <p class="modal-title text-center modalHeading">Pen Your Post</p>
+            </div>
+            <hr class="half">
+            <div class="modal-body">
+                <form>
+                    <label>Title</label><br>
+                    <input type="text" class="titleinput" name="title" id="title">  <br>
+
+                    <label>Content</label>
+                    <textarea name="content" id="content" rows="10"></textarea>
+                </form> <br>
+                <div class="text-center">
+                    <button type="submit" class="signUpButton">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 </html>

@@ -1,0 +1,20 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+#postButtons {
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.postButton{
+    padding: 5px;
+  background-color: #FFDE48;
+  margin-right: 5px;
+}

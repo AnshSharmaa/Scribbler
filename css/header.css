@@ -1,0 +1,10 @@
+.headerRight{
+  float: right;
+}
+
+#headerButton{
+  padding: 5px;
+  background-color: #0000FF;
+  color: white; 
+  margin-right: 3px;
+}

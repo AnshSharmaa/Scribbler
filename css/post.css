@@ -46,7 +46,7 @@
     width: 11%;
 }
 
-#commentsSection{
+#commentsSection {
     padding-top: 20px;
 }
 
@@ -56,12 +56,12 @@
     font-weight: 600;
 }
 
-#comments{
+#comments {
     background-color: #E2E4E6;
     padding: 20px;
 }
 
-#comment{
+#comment {
     padding: 20px 20px;
     margin: 5px;
     background-color: white;

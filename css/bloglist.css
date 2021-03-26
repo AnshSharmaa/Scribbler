@@ -2,6 +2,13 @@ body {
     background-color: orange !important;
 }
 
+.author {
+    font-weight: 900;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
 .title, .text {
     display: -webkit-box;
     -webkit-line-clamp: 3 !important;
@@ -12,14 +19,7 @@ body {
 
 .title {
     font-weight: 900;
-    font-size: 1.2rem;
-}
-
-.author {
-    font-weight: 900;
-    background-color: #FFFFFF;
-    padding: 15px;
-    border-radius: 15px 0px 0px 15px;
+    font-size: 1.25rem;
 }
 
 .content {
@@ -30,17 +30,57 @@ body {
 
 .blog {
     border-radius: 15px;
-    width: 40%;
-    margin: 15px 40px;
+    width: 30%;
+    margin: 10px 45px;
+}
+
+#trash {
+    margin-right: 14px !important;
+    margin-top: -20px;
+}
+
+#delbtn {
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+#trashdown {
+    position: absolute;
+    top: 0;
 }
 
 #eli {
+    margin-right: 14px !important;
+}
+
+#elibtn {
     position: relative;
-    margin-right: 15px !important;
-    margin-bottom: -10px;
+    border: none;
+    cursor: pointer;
 }
 
 #elidown {
     position: absolute;
-    bottom: 0;
+    bottom: -80px;
+}
+
+.modalHeader {
+    padding: 30px 15px 0px 15px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+modal-body {
+    line-height: 50px;
+    font-size: large;
+}
+
+.modalButton {
+    margin: 10px;
+    width: 40%;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
 }

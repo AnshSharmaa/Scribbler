@@ -3,13 +3,13 @@ body {
 }
 
 .headerRight {
-  padding-top: 5px;
+  padding-top: 10px;
   float: right;
 }
 
 #headerButton {
-  padding: 5px;
+  padding: 7px;
   background-color: #0000FF;
   color: white;
-  margin-right: 3px;
+  margin-right: 5px;
 }

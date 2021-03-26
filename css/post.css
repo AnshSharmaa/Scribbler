@@ -40,7 +40,7 @@
     width: 60%;
 }
 
-#comment {
+#commentBtn {
     margin: 10px 0;
     padding: 10px;
     width: 11%;
@@ -51,6 +51,18 @@
 }
 
 #allComments {
+    margin-top: 20px;
     font-size: large;
     font-weight: 600;
+}
+
+#comments{
+    background-color: #E2E4E6;
+    padding: 20px;
+}
+
+#comment{
+    padding: 20px 20px;
+    margin: 5px;
+    background-color: white;
 }

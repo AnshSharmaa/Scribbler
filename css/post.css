@@ -21,21 +21,36 @@
     background-color: #fd4671;
 }
 
-#content{
+#content {
     padding-top: 20px;
 }
 
-#like{
+#like {
     margin: 20px 0 10px 0;
     padding: 10px;
     width: 15%;
 }
 
-#firstone{
-    font-size:small;
+#firstone {
+    font-size: small;
     font-weight: 200;
 }
 
-#commentText{
+#commentText {
     width: 60%;
+}
+
+#comment {
+    margin: 10px 0;
+    padding: 10px;
+    width: 11%;
+}
+
+#commentsSection{
+    padding-top: 20px;
+}
+
+#allComments {
+    font-size: large;
+    font-weight: 600;
 }

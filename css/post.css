@@ -1,0 +1,41 @@
+#material {
+    padding: 50px 30px;
+}
+
+#title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#author {
+    font-weight: 500;
+}
+
+#edit {
+    padding: 9px;
+}
+
+.pinkButton {
+    border: 0;
+    color: white;
+    background-color: #fd4671;
+}
+
+#content{
+    padding-top: 20px;
+}
+
+#like{
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    width: 15%;
+}
+
+#firstone{
+    font-size:small;
+    font-weight: 200;
+}
+
+#commentText{
+    width: 60%;
+}

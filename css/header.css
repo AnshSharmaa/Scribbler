@@ -1,15 +1,23 @@
 body {
   font-family: 'Montserrat' !important;
 }
-
-.headerRight {
-  padding-top: 10px;
-  float: right;
-}
-
 #headerButton {
   padding: 7px;
   background-color: #0000FF;
   color: white;
   margin-right: 5px;
+}
+
+.logo-title{
+  font-family: 'Satisfy', cursive;
+  font-size: 35px;
+  color: #112fb4;
+  text-decoration: none;
+  margin-left: 10px;
+
+}
+.middleText{
+  color: black;
+  font-family: 'Marck Script', cursive;
+  margin-left: 10px;
 }

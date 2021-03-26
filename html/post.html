@@ -58,14 +58,12 @@
         <button id="like" class="pinkButton"><i class="fas fa-thumbs-up"></i> Like</button>
         <p id="firstone">Be the first one to like this!</p>
         <textarea id="commentText" rows="5" placeholder="Leave a comment..."></textarea>
-        <button id="commentBtn" class="pinkButton">Comment</button>
+        <button id="commentBtn" class="pinkButton" onclick="addComment()">Comment</button>
         <p id="allComments">All Comments</p>
-        <div id="comments" class="d-flex flex-column-reverse">
-            <div id="comment"> Comment 1</div>
-            <div id="comment"> Comment 2</div>
+        <div id="comments" class="d-flex flex-column-reverse" style="visibility: none;">
         </div>
     </div>
-
+    <script src="../js/post.js"></script>
 </body>
 
 </html>

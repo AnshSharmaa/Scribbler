@@ -4,7 +4,7 @@ function edit() {
 
     document.getElementById("titleDiv").innerHTML = `<input id="title" type="text" value="${titleTxt}" onkeypress="this.style.width = ((this.value.length + 9) * 9) + 'px';">`;
 
-    document.getElementById("contentDiv").innerHTML = `<textarea id="content" rows="4" style="width:100%;"></textarea>`;
+    document.getElementById("contentDiv").innerHTML = `<textarea id="content" rows="13-" style="width:100%;"></textarea>`;
     document.getElementById("content").value=contentTxt;
 
     document.getElementById("edit").setAttribute('onclick','save()');
@@ -23,17 +23,13 @@ function save(){
 }
 
 function like() {
-    document.getElementById("likeBtn").innerHTML = (`<i class="fas fa-thumbs-up"></i> Liked !`);
+    document.getElementById("likeBtn").innerHTML = (`<i class="fas fa-thumbs-up"></i> Liked!`);
     document.getElementById("firstOne").innerText = "1 person likes this!"
 }
 
 function addComment() {
     var text = document.getElementById("commentText").value;
     if(text){
-
-        document.getElementById("comments").style.opacity = "100%";
-        
-        
         var div = document.createElement("div");
         div.id = "comment";
         div.innerText = text;

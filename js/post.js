@@ -1,8 +1,12 @@
 function edit() {
-    var titletxt = document.getElementById("title").value;
-    var contenttxt = document.getElementById("content").value;
+    var titletxt = document.getElementById("title").innerHTML;
+    var contenttxt = document.getElementById("content").innerHTML;
 
-    document.getElementById("titleDiv").innerHTML= '<textarea row="1" ';
+    document.getElementById("titleDiv").innerHTML = `<input type="text" value="${titletxt}" onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';">`;
+
+    document.getElementById("content").innerHTML = `<textarea rows="4" style="width:100%">${contenttxt}</textarea>`;
+
+    document.getElementById("edit").innerHTML = `Save <i class="fas fa-edit">`
 }
 
 function like() {

@@ -2,9 +2,10 @@ function edit() {
     var titleTxt = document.getElementById("title").innerHTML;
     var contentTxt = document.getElementById("content").innerHTML;
 
-    document.getElementById("titleDiv").innerHTML = `<input id="title" type="text" value="${titleTxt}" onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';">`;
+    document.getElementById("titleDiv").innerHTML = `<input id="title" type="text" value="${titleTxt}" onkeypress="this.style.width = ((this.value.length + 9) * 9) + 'px';">`;
 
-    document.getElementById("content").innerHTML = `<textarea id="content" rows="4" style="width:100%">${contentTxt}</textarea>`;
+    document.getElementById("contentDiv").innerHTML = `<textarea id="content" rows="4" style="width:100%;"></textarea>`;
+    document.getElementById("content").value=contentTxt;
 
     document.getElementById("edit").setAttribute('onclick','save()');
     document.getElementById("edit").innerHTML = `Save <i class="far fa-save"></i>`;
@@ -17,6 +18,8 @@ function save(){
     document.getElementById("titleDiv").innerHTML = `<h3 id="title"> ${titleTxt}</h3>`;
     document.getElementById("contentDiv").innerHTML = `<div id="content">${contentTxt}</div>`;
 
+    document.getElementById("edit").setAttribute('onclick','edit()');
+    document.getElementById("edit").innerHTML = `Edit <i class="fas fa-edit"></i>`;
 }
 
 function like() {
@@ -41,5 +44,6 @@ function addComment() {
         alert("Comment cannot be empty!");
     }
 }
+
 
 

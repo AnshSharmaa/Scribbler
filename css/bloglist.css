@@ -35,36 +35,27 @@ body {
     font-size: 1.25rem;
 }
 
-#trash {
-    margin-right: 14px !important;
-    margin-top: -20px;
-}
-
 #delBtn {
-    position: relative;
+    float: right;
+    margin-top: -49px;
     border: none;
-    
+    background-color: #E8E8E8;
 }
 
 #trashDown {
-    position: absolute;
-    top: 0;
     cursor: pointer;
-}
-
-#eli {
-    margin-right: 14px !important;
 }
 
 #eliBtn {
-    position: relative;
+    float: right;
     border: none;
-    cursor: pointer;
+    background-color: #E8E8E8;
+    margin-bottom: -15px;
 }
 
 #eliDown {
-    position: absolute;
-    bottom: -100px;
+    
+
 }
 
 #modalHeader {

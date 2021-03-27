@@ -2,14 +2,27 @@ body {
     background-color: orange !important;
 }
 
-.author {
+#author {
     font-weight: 900;
     background-color: #FFFFFF;
-    padding: 15px;
+    padding: 30px;
     border-radius: 15px 0px 0px 15px;
 }
 
-.title, .text {
+#blog {
+    border-radius: 15px;
+    width: 35%;
+    min-width: 35%;
+    margin: 13px 55px;
+}
+
+#content {
+    background-color: #E8E8E8;
+    padding: 20px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#title, #text {
     display: -webkit-box;
     -webkit-line-clamp: 3 !important;
     -webkit-box-orient: vertical;
@@ -17,21 +30,9 @@ body {
     text-overflow: ellipsis;
 }
 
-.title {
+#title {
     font-weight: 900;
     font-size: 1.25rem;
-}
-
-.content {
-    background-color: #E8E8E8;
-    padding: 20px;
-    border-radius: 0px 15px 15px 0px;
-}
-
-.blog {
-    border-radius: 15px;
-    width: 30%;
-    margin: 10px 45px;
 }
 
 #trash {
@@ -39,33 +40,34 @@ body {
     margin-top: -20px;
 }
 
-#delbtn {
+#delBtn {
     position: relative;
     border: none;
-    cursor: pointer;
+    
 }
 
-#trashdown {
+#trashDown {
     position: absolute;
     top: 0;
+    cursor: pointer;
 }
 
 #eli {
     margin-right: 14px !important;
 }
 
-#elibtn {
+#eliBtn {
     position: relative;
     border: none;
     cursor: pointer;
 }
 
-#elidown {
+#eliDown {
     position: absolute;
-    bottom: -80px;
+    bottom: -100px;
 }
 
-.modalHeader {
+#modalHeader {
     padding: 30px 15px 0px 15px;
     font-size: 19px;
     font-weight: 600;

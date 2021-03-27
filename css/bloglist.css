@@ -1,5 +1,6 @@
 body {
     background-color: orange !important;
+    font-family: 'Montserrat' !important;
 }
 
 #author {
@@ -22,12 +23,18 @@ body {
     border-radius: 0px 15px 15px 0px;
 }
 
-#title, #text {
+#title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+#text {
     display: -webkit-box;
     -webkit-line-clamp: 3 !important;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 #title {
@@ -53,11 +60,6 @@ body {
     margin-bottom: -15px;
 }
 
-#eliDown {
-    
-
-}
-
 #modalHeader {
     padding: 30px 15px 0px 15px;
     font-size: 19px;
@@ -70,6 +72,7 @@ modal-body {
 }
 
 .modalButton {
+    border: none;
     margin: 10px;
     width: 40%;
     padding: 10px 10px 10px 10px;

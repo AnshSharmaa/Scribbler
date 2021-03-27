@@ -1,6 +1,23 @@
-body {
-  font-family: 'Montserrat' !important;
+.heading1
+{
+    font-family: 'Satisfy';
+     font-size: 50px;
+     color: #2519ff;
+    margin: 0px;
+    position: relative;
+    left:20px;
+    width: 50%;
 }
+.heading2
+{
+    font-family: 'Marck Script';
+     font-size: 15px;
+     color: black;
+    position: relative;
+    width: 50%;
+}
+
+
 
 #buttons {
   margin-top: 20px;

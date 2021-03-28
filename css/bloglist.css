@@ -11,6 +11,7 @@ body {
 }
 
 #blog {
+    position: relative;
     border-radius: 15px;
     width: 35%;
     min-width: 35%;
@@ -23,30 +24,35 @@ body {
     border-radius: 0px 15px 15px 0px;
 }
 
-#title{
+#title {
+    /*this bit of code hides the content beyond 1 line
+    The -webkit-line-clamp CSS property allows limiting of the contents of a container to the specified number of lines.
+    NOTE: webkit is not production reliable 
+    */
     display: -webkit-box;
     -webkit-line-clamp: 1 !important;
     -webkit-box-orient: vertical;
     overflow: hidden;
-
+    margin: 10px 5px 10px 0;
+    font-weight: 900;
+    font-size: 1.25rem;
 }
+
 #text {
+    /*this bit of code hides the content beyond 1 line*/
     display: -webkit-box;
     -webkit-line-clamp: 3 !important;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-#title {
-    font-weight: 900;
-    font-size: 1.25rem;
-}
-
 #delBtn {
-    float: right;
-    margin-top: -49px;
+    position: absolute;
     border: none;
-    background-color: #E8E8E8;
+    margin-top: -49px;
+    right: 0;
+    padding-right: 15px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #trashDown {
@@ -54,10 +60,11 @@ body {
 }
 
 #eliBtn {
-    float: right;
+    position: absolute;
     border: none;
-    background-color: #E8E8E8;
-    margin-bottom: -15px;
+    right: 0;
+    padding-right: 15px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #modalHeader {

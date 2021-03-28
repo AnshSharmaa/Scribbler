@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+     <!--css-->
     <link rel="stylesheet" href="../css/bloglist.css">
     <link rel="stylesheet" href="../css/header.css">
     <!--Font-->
@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
-<body >
+<body>
 
-    <div id="header" class=" d-flex justify-content-between">
+    <!--Header-->
+    <div id="header" class="d-flex justify-content-between">
         <div class="heading1">
             ScriBBler
             <div class="heading2">
@@ -33,23 +34,52 @@
         </div>
     </div>
 
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
-
     <!-- list of all posts starts here -->
     <div class="d-flex flex-row justify-content-center flex-wrap">
 
+        <!-- A lot of flex has been used in this document that helps align all the contents without much css and this repeats for all the cards
+
+             this one basically makes a row(row is the default direction of flex hence we don't need to specify it) and assigns a 
+             column to each of the immediate children i.e author and content
+        -->
+        <div id="blog" class="d-flex">
+            <!--this one just to center the author name vertically-->
+            <div id="author" class="d-flex flex-column justify-content-center ">
+                <p>Srishti Gupta</p>
+            </div>
+
+            <!--this flex makes a column and fits the immediate children in that column i.e the title and text-->
+            <div id="content" class="d-flex flex-column justify-content-center">
+                <div id="title" class="title ">
+                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)! Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Distinctio amet corporis architecto </p>
+                    <span>
+                        <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown" class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
+                    </span>
+                </div>
+                <div>
+                    <p id="text">Since JavaScript does not have any type-checking, either of these keywords can be
+                        used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords
+                        are used for the same purpose, they are different.</p>
+                    <span id="eli">
+                        <button id="eliBtn" onclick="location.href = './post.html';"><i id="eliDown" class="fas fa-ellipsis-h"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
         <div id="blog" class="d-flex flex-row align-items-stretch">
             <div id="author" class="d-flex flex-column justify-content-center ">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div id="content" class="d-flex flex-column justify-content-center">
+            <div id="content" class="d-flex flex-column ">
                 <div id="title" class="title ">
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)! Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Distinctio amet corporis architecto </p>
                     <span>
                         <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown"
                                 class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
                 </div>
                 <div>
@@ -69,14 +99,14 @@
                 <p>Srishti Gupta</p>
             </div>
 
-            <div id="content" class="d-flex flex-column justify-content-center">
+            <div id="content" class="d-flex flex-column ">
                 <div id="title" class="title ">
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-
-                    <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown"
-                            class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-
+                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)! Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Distinctio amet corporis architecto </p>
+                    <span>
+                        <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown"
+                                class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
+                    </span>
                 </div>
                 <div>
                     <p id="text">Since JavaScript does not have any type-checking, either of these keywords can be
@@ -95,14 +125,14 @@
                 <p>Srishti Gupta</p>
             </div>
 
-            <div id="content" class="d-flex flex-column justify-content-center">
+            <div id="content" class="d-flex flex-column ">
                 <div id="title" class="title ">
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-
-                    <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown"
-                            class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-
+                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)! Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Distinctio amet corporis architecto </p>
+                    <span>
+                        <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown"
+                                class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
+                    </span>
                 </div>
                 <div>
                     <p id="text">Since JavaScript does not have any type-checking, either of these keywords can be
@@ -121,14 +151,14 @@
                 <p>Srishti Gupta</p>
             </div>
 
-            <div id="content" class="d-flex flex-column justify-content-center">
+            <div id="content" class="d-flex flex-column ">
                 <div id="title" class="title ">
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-
-                    <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown"
-                            class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-
+                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)! Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Distinctio amet corporis architecto </p>
+                    <span>
+                        <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown"
+                                class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
+                    </span>
                 </div>
                 <div>
                     <p id="text">Since JavaScript does not have any type-checking, either of these keywords can be
@@ -141,43 +171,14 @@
                 </div>
             </div>
         </div>
-
-        <div id="blog" class="d-flex flex-row align-items-stretch">
-            <div id="author" class="d-flex flex-column justify-content-center ">
-                <p>Srishti Gupta</p>
-            </div>
-
-            <div id="content" class="d-flex flex-column justify-content-center">
-                <div id="title" class="title ">
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-
-                    <button id="delBtn" data-toggle="modal" data-target="#delpost"><i id="trashDown"
-                            class="fas fa-trash-alt" data-toggle="modal" data-target="#delpost"></i> </button>
-                    <!-- TODO: Include Font Awesome icon for delete icon here -->
-
-                </div>
-                <div>
-                    <p id="text">Since JavaScript does not have any type-checking, either of these keywords can be
-                        used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords
-                        are used for the same purpose, they are different.</p>
-                    <span id="eli">
-                        <button id="eliBtn" onclick="location.href = './post.html';"><i id="eliDown"
-                                class="fas fa-ellipsis-h"></i></button>
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <!-- TODO: Write code for delete post modal here -->
 
     </div>
-    <!-- list of all posts ends here    flex row wrap justify center with  card 50% -->
-
 
     <script src="../js/bloglist.js"></script>
     <script src="../js/header.js"></script>
 </body>
 
+<!--modal for sign up-->
 <div class="modal fade" id="signUp" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -211,6 +212,7 @@
     </div>
 </div>
 
+<!--modal for sign in-->
 <div class="modal fade" id="signIn" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -231,13 +233,15 @@
                         <button type="submit" class="signUpButton ">Sign In</button>
                     </div>
                 </form> <br>
-                <p id="signUpText" class="text-center">Not a member? <a id="blue"data-dismiss="modal" data-toggle="modal"data-target="#signUp">Sign up</a>
+                <p id="signUpText" class="text-center">Not a member? <a id="blue" data-dismiss="modal"
+                        data-toggle="modal" data-target="#signUp">Sign up</a>
             </div>
         </div>
     </div>
 
 </div>
 
+<!--modal for deleting post-->
 <div class="modal fade" id="delpost" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">

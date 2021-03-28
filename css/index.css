@@ -75,6 +75,7 @@ input[type="text"], [type="password"] {
   font-size: 17px;
   margin-bottom: 10px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .titleinput {
@@ -92,6 +93,7 @@ textarea {
 
 #blue{
   color: blue;
+  cursor: pointer;
 }
 
 #post{
@@ -100,4 +102,10 @@ textarea {
 
 textarea{
   background-color: #F1F1F1;
+}
+
+.close{
+
+  font-size: 50px !important;
+  margin-top: -15px;
 }

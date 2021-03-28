@@ -12,6 +12,9 @@ body {
 
 }
 
+/* this is a tag id selector which only applies the css to the tag with specific id 
+    I had to do this as the inputs were picking the css from header.css which was used in sign in and sign up modals
+*/
 input#title{
     width: max-content;
     padding: 0px 5px;

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!--css-->
     <link rel="stylesheet" href="../css/post.css">
     <link rel="stylesheet" href="../css/header.css">
     <!--Fonts-->
@@ -19,6 +20,7 @@
 </head>
 
 <body>
+    <!--Header-->
     <div id="header" class="d-flex justify-content-between">
         <div class="heading1">
             ScriBBler
@@ -32,7 +34,7 @@
         </div>
     </div>
 
-
+    <!--Most of the functionality is still flexbox as explained in the previous file(bloglist.html)-->
     <div id="material" class="d-flex flex-column">
 
         <div id="titleDiv" class="d-flex justify-content-center">
@@ -53,12 +55,15 @@
         <textarea id="commentText" rows="5" placeholder="Leave a comment..." required></textarea>
         <button id="commentBtn" class="pinkButton" onclick="addComment()">Comment</button>
         <p id="allComments">All Comments</p>
+        
+        <!--flex-column-reverse basically reverses the direction of the content such that the last element is displayed at the first position-->
         <div id="comments" class="d-flex flex-column-reverse"></div>
     </div>
     
     <script src="../js/post.js"></script>
 </body>
 
+<!--modal for sign up-->
 <div class="modal fade" id="signUp" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -92,6 +97,8 @@
     </div>
 </div>
 
+
+<!--modal for sign in-->
 <div class="modal fade" id="signIn" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">

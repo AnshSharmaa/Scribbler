@@ -9,6 +9,22 @@ body {
 #title {
     font-size: 1.5em;
     font-weight: 600;
+
+}
+
+input#title{
+    width: max-content;
+    padding: 0px 5px;
+    background-color: white;
+    border: solid 1px #FFC0CB;
+    height: fit-content;
+}
+
+textarea#content{
+    width: max-content;
+    padding: 0px 5px;
+    background-color: white;
+    border: solid 1px black;
 }
 
 #author {
@@ -42,8 +58,10 @@ body {
     font-weight: 200;
 }
 
-#commentText {
+textarea#commentText {
     width: 60%;
+    background-color: white;
+    border: solid 1px black;
 }
 
 #commentBtn {

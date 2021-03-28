@@ -57,7 +57,10 @@ input {
   height: 2.5em;
 }
 
+
 input[type="text"], [type="password"] {
+  /* The [attribute*=value] selector matches every element whose attribute value containing a specified value 
+  */
   font-size: 20px;
   margin-bottom: 30px;
 }

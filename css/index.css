@@ -1,5 +1,9 @@
 body {
   font-family: 'Montserrat' !important;
+  /* Importing background image and setting it to not repeat, stay at the center and setting the background-size to cover which scales 
+     the image as large as possible to fill the container but the image still not dynamic hence we stretch it using width and then tell it
+     to stretch according to the vertical height(100vh)
+  */
   background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -9,9 +13,17 @@ body {
 }
 
 #postButtons {
+
   position: fixed;
+  /*top 50%  and 50% will center it but it will put the starting point of the elements at the center and 
+    will not count for their own height and width hence it will be a bit off center 
+    so I have used transform  below
+  */
   top: 50%;
   left: 50%;
+  /* If you don’t know the width or height, you can use the transform property and a negative translate of 50% in both directions
+    (it is based on the current width/height of the element) to center:
+   */
   transform: translate(-50%, -50%);
 }
 

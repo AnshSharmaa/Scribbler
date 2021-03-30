@@ -8,7 +8,7 @@ function edit() {
     /* this code sends a premade tag to replace the title with an input area with the title text already in it
        and the css in the onkeypress is just to dynamically increase its width according to the length of text 
     */
-    document.getElementById("titleDiv").innerHTML = `<input id="title" type="text" value="${titleTxt}" onkeypress="this.style.width = ((this.value.length + 9) * 9) + 'px';">`;
+    document.getElementById("titleDiv").innerHTML = `<input id="title" type="text" value="${titleTxt}" style="width:19%;" onkeypress="this.style.width = ((this.value.length + 1) * 13) + 'px';">`;
 
     // similar code that sends a tag with content which is added in the next line because sending it like title didnt work somehow 
     document.getElementById("contentDiv").innerHTML = `<textarea id="content" rows="13-" style="width:100%;"></textarea>`;

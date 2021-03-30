@@ -6,7 +6,9 @@ function edit() {
     var contentTxt = document.getElementById("content").innerHTML;
 
     /* this code sends a premade tag to replace the title with an input area with the title text already in it
-       and the css in the onkeypress is just to dynamically increase its width according to the length of text 
+       and the css in the onkeypress is just to dynamically increase its width according to the length of text
+       it works by finding the amount of character and multiplying it by the width of each character and then setting it as the current width
+       the value 13 was found by trial and error as em is relative to the screen size and px is static measurement 
     */
     document.getElementById("titleDiv").innerHTML = `<input id="title" type="text" value="${titleTxt}" style="width:19%;" onkeypress="this.style.width = ((this.value.length + 1) * 13) + 'px';">`;
 
